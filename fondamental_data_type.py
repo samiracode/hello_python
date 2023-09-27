@@ -68,14 +68,41 @@ O O
 ## Type conversion : converting to str or int
 a = str(100)
 b = int(a)
-c = type(b)
-print(c)
+c = float(b)
+d = type(c)
+print(d)
 
 #or 
-print(type(int(str(100))))
+print(type(float(int(str(100)))))
 
 ## Escaping sequenc
 
 weather = 'it\'s a kind of \"summer\" in here'
 '\t hello' # hello will be print with a tab-space befor
 '\n' # new line
+
+## formatted strings 
+name = 'Johnny'
+age = 55 
+print(f'hi {name}. You are {age} years old')
+# or
+print('hi {}. You are {} years old.'.format(name, age))
+# or
+print('hi {1}. You are {0} years old.'.format(name, age))
+# or 
+print('hi {new_name}. You are {sally_age} years old.'.format(new_name = 'Sally', sally_age = 100))
+
+## string indexes
+bunch_of_numbers = '01234567'
+print(bunch_of_numbers[4])    # prints 4
+print(bunch_of_numbers[2:6:2])# [start:stop:stepover]
+print(bunch_of_numbers[1:])   # prints from 1 till end
+print(bunch_of_numbers[:5])   # prints from start till 5
+print(bunch_of_numbers[::1])  # default behavior
+print(bunch_of_numbers[-1])   # prints 7; negative means start from end
+print(bunch_of_numbers[::-1]) # prints 76543210 minus means stepover from end
+print(bunch_of_numbers[::-2]) # prints 7531
+
+## immutibility : strings in python are not changable
+
+## build in functions and methods
