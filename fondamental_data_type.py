@@ -53,3 +53,23 @@ user_age = iq/5 # this is a statement
 some_value = 5
 some_value += 2
 print(some_value) #the answer is 7 
+
+## strings are written like in JS but there is an additional type: long string
+long_string = '''
+WOW
+O O
+---
+'''
+
+## string concatenation
+
+'samira' + ' tavakolli' 
+
+## Type conversion : converting to str or int
+a = str(100)
+b = int(a)
+c = type(b)
+print(c)
+
+#or 
+print(type(int(str(100))))
