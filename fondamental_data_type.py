@@ -49,3 +49,7 @@ iq/5 # this is an expression
 # a statement is an entire line of a code like
 user_age = iq/5 # this is a statement
 
+## augmented assingment operator
+some_value = 5
+some_value += 2
+print(some_value) #the answer is 7 
