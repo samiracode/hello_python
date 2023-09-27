@@ -73,3 +73,9 @@ print(c)
 
 #or 
 print(type(int(str(100))))
+
+## Escaping sequenc
+
+weather = 'it\'s a kind of \"summer\" in here'
+'\t hello' # hello will be print with a tab-space befor
+'\n' # new line
