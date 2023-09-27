@@ -42,3 +42,10 @@ __hihi = 'hi'
 # short way to assign values to more than one variables:
 a,b,c = 1,2,3
 
+## Expressions vs Statements
+# expression is a piece of code that produces value
+iq = 180
+iq/5 # this is an expression
+# a statement is an entire line of a code like
+user_age = iq/5 # this is a statement
+
