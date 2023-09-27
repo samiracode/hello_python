@@ -18,4 +18,11 @@ round(3.9)
 abs(-20)  # returns the absolute value of an argument (absolute value = no negative ) so the answer is 20
 
 
-
+## operator precedence 
+# Please Excuse My Dear Aunt Sally 
+# Please : Parentesis  ()
+# Excuse : Exponentials  **
+# My : Multiplication  *
+# Dear : Division  /
+# Aunt : Addition  +
+# Sally : Subtraction  -
