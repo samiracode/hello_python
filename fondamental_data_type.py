@@ -26,3 +26,5 @@ abs(-20)  # returns the absolute value of an argument (absolute value = no negat
 # Dear : Division  /
 # Aunt : Addition  +
 # Sally : Subtraction  -
+
+bin(5)  # returns the binary representation of a number
