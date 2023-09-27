@@ -106,3 +106,21 @@ print(bunch_of_numbers[::-2]) # prints 7531
 ## immutibility : strings in python are not changable
 
 ## build in functions and methods
+
+# calculating the length of a string
+len('hellloooooooo')
+greet = 'helllooo'
+print(greet)
+print(greet[3:len(greet)]) 
+
+# print() is a build in function
+# something.format() is a build in string function
+
+quot = 'to be or not to be'
+print(quot.upper())
+print(quot.capitalize())
+print(quot.lower())
+print(quot.find('be')) # does 'b' exist? answer: 3 (starts at index 3)
+print(quot.replace('be', 'me'))
+print(quot) # will print the first value str we had because str are immutable
+
