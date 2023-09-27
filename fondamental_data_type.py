@@ -28,3 +28,17 @@ abs(-20)  # returns the absolute value of an argument (absolute value = no negat
 # Sally : Subtraction  -
 
 bin(5)  # returns the binary representation of a number
+int('0b101', 2) # convert that binary number to a base 2 number
+
+## variables
+
+# constants variables are writen in capital letters
+PI = 3.14
+# we can overide them for sure but that is not a good practice
+
+# dunder variables; we should not creat a varibles that starts with duble under scores like:
+__hihi = 'hi'
+
+# short way to assign values to more than one variables:
+a,b,c = 1,2,3
+
