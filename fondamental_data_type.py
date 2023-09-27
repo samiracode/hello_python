@@ -124,3 +124,14 @@ print(quot.find('be')) # does 'b' exist? answer: 3 (starts at index 3)
 print(quot.replace('be', 'me'))
 print(quot) # will print the first value str we had because str are immutable
 
+## Boolean
+
+print(bool(0))  #False
+print(bool(1))  #True
+
+## Facebook excersize
+
+birth_year = input('Which year were you born?')
+year_number = int(birth_year)
+how_old = 2023 - year_number 
+print(f'Congratulations! you are {how_old} years old.')
