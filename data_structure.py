@@ -19,7 +19,13 @@ print(amazon_cart)
 
 ## Matrix : Multi dimentional list 
 matrix = [
-    [1,2,3]  # <= sublist
-    [4,5,6]
+    [1,2,3],  # <= sublist
+    [4,5,6],
     [7,8,9]
 ]
+print(matrix[0][1])
+
+# question: what is an object in Python? everything
+
+basket = [1,2,3,4,5]
+print(len(basket))

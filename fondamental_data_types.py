@@ -114,7 +114,7 @@ print(greet)
 print(greet[3:len(greet)]) 
 
 # print() is a build in function
-# something.format() is a build in string method
+# something.format() is a build in string method (methods are own by sth)
 
 quot = 'to be or not to be'
 print(quot.upper())
