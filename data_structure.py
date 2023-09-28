@@ -80,3 +80,38 @@ print(new_sentence)
 a,b,c, *other, d = [1,2,3,4, 5, 6, 7, 8, 9, 0]
 print(b)
 print(other)
+
+## None = is absence of any value
+
+## Dictionary is an unordered key-value pair
+
+dicttionary = {
+    'a' : [1,2,3],  # key : value
+    'b': 7
+} 
+print(dicttionary['b'])
+print(dicttionary['a'][1])
+# values can have any type of data but keys always has to be immutable so a list can not be a key
+
+user = {
+    'name' : 'Johnny',
+    'greet' : 'whatsaaap?!',
+    'badges' : [1,2,3]
+}
+# print(user['age']) !!error!!
+print(user.get('age')) # None
+print(user.get('age', 55)) # in case age does not exist gives it 55 value but if it exist, it will 
+#present that value and will not be modified by the new value of 55
+
+user2 = dict(name='Sally')
+print(user2)
+
+print('name' in user.keys())
+print('Johnny' in user.values())
+print(user.items())
+
+# user.clear()
+user_3 = user.copy()
+user.pop('badges')
+user.update({'experience' : 6 })
+print(user)
