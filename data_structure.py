@@ -66,3 +66,17 @@ new_book = book.copy()
 print(new_book)
 book.reverse()  # it is reversing the place of indexes [index4, index3, index2, index1, index0]
 print(book)
+print(book[::-1])  # this is also reversing the list but creats a new copy and the main list is not modified
+
+## Range
+print(list(range(0,20))) # range(start, stop)
+
+sentence = '!'
+new_sentence = sentence.join(['hi', 'my', 'name', 'is', 'Gigi'])
+print(new_sentence)
+
+## List unpacking 
+# assigning a variable to each value in the list
+a,b,c, *other, d = [1,2,3,4, 5, 6, 7, 8, 9, 0]
+print(b)
+print(other)
