@@ -29,3 +29,40 @@ print(matrix[0][1])
 
 basket = [1,2,3,4,5]
 print(len(basket))
+new_basket = basket.append(100)
+print(new_basket) #None!!!! we should append befor we assign it to new_basket
+
+basket.insert(3,500)
+print(basket)
+
+basket.extend([300, 400, 500])
+print(basket)
+
+basket.pop()   # pops off whatever is at the end of the list
+print(basket)
+
+basket.pop(0)
+print(basket)
+
+basket.remove(100) # this method takes a value, not an index
+print(basket)
+
+new_list = basket.pop(4)
+print(new_list) # it gives me 5 but if I use remove method instead I get None because remove method
+# modify the list in place and pop method not, it also takes an index instead of a value of the list
+
+basket.clear()
+print(basket)
+
+book = ['a', 'b', 'c', 'd', 'e', 'a']
+print(book.index('c',0, 3)) # index (value, start, stop)
+print('e' in book)
+print(book.count('a'))
+book.sort()
+print(book)
+# if we do print(book.sort()) we get Non but if we do print(sorted(book)) we get the list sorted for us
+# sorted() creats a new copy of book but sort modifys it in place
+new_book = book.copy()
+print(new_book)
+book.reverse()  # it is reversing the place of indexes [index4, index3, index2, index1, index0]
+print(book)
