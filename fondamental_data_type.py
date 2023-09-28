@@ -6,16 +6,17 @@ type(2+4) #int
 type(2-4) #int
 type(2/4) #float
 type(9.8 + 0.2) #float
+print(type(9 + 2.1))
 
 2 * 3 
-2 ** 3 # exponential (2 power of 3 )
+2 ** 3 #  2 power of 3 
 5 / 4  # rounded down to an integer so equals to 1
 5 % 4  # modular gives the remain of a division so equals to 1
 
 
 ## Math Functions
 round(3.9) 
-abs(-20)  # returns the absolute value of an argument (absolute value = no negative ) so the answer is 20
+abs(-20)  # returns the absolute value of an argument (absolute value = no negative ) 
 
 
 ## operator precedence 
@@ -28,7 +29,7 @@ abs(-20)  # returns the absolute value of an argument (absolute value = no negat
 # Sally : Subtraction  -
 
 bin(5)  # returns the binary representation of a number
-int('0b101', 2) # convert that binary number to a base 2 number
+# int('0b101', 2)  convert binary number to a base 2 number
 
 ## variables
 
@@ -62,7 +63,6 @@ O O
 '''
 
 ## string concatenation
-
 'samira' + ' tavakolli' 
 
 ## Type conversion : converting to str or int
@@ -114,7 +114,7 @@ print(greet)
 print(greet[3:len(greet)]) 
 
 # print() is a build in function
-# something.format() is a build in string function
+# something.format() is a build in string method
 
 quot = 'to be or not to be'
 print(quot.upper())
@@ -135,3 +135,12 @@ birth_year = input('Which year were you born?')
 year_number = int(birth_year)
 how_old = 2023 - year_number 
 print(f'Congratulations! you are {how_old} years old.')
+
+## Passworld checker excersize
+
+username = input('Please enter your name')
+passworld = input('Please enter your passworld')
+passworld_len = len(passworld)
+hide_passworld = '*' * passworld_len
+
+print(f'Hi {username}. Your passworld is {hide_passworld} is {passworld_len} letters long')
