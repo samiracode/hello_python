@@ -149,3 +149,24 @@ while True :
     responce = input('say something: ')
     if responce == 'bye':
       break
+
+## Break, Continue, Pass
+## Excersize GUI print a christmas tree
+picture = [
+    [0,0,0,1,0,0,0],
+    [0,0,1,1,1,0,0],
+    [0,1,1,1,1,1,0],
+    [1,1,1,1,1,1,1],
+    [0,0,0,1,0,0,0],
+    [0,0,0,1,0,0,0]
+]
+for row in picture :
+    for pixel in row :
+        if  pixel == 1:
+            print('*', end='') #the end here is keeping a star in place
+        else :
+            print(' ', end='') # the end here is keepin empty space in place
+    print('') # and if this makes every row starts on a new line
+
+    
+   
