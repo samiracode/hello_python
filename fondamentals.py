@@ -132,3 +132,20 @@ for i, char in enumerate('Haaallllååååå') :
 for i, char in enumerate(list(range(100))) :
    if char == 50 :
        print(f'The index of 50 is : {i}')
+
+## WHILE LOOP 
+i = 0
+while i < 20 :
+    print(i)
+    i += 1
+    # break ( if we had a break here and we do not use else, the line down would never execute)
+else :
+    print('Done with all these work here')
+# while True :
+    # do something
+    # break
+
+while True :
+    responce = input('say something: ')
+    if responce == 'bye':
+      break
