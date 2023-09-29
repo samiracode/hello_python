@@ -166,7 +166,22 @@ for row in picture :
             print('*', end='') #the end here is keeping a star in place
         else :
             print(' ', end='') # the end here is keepin empty space in place
-    print('') # and if this makes every row starts on a new line
+    print('') # need a new line after every row
+
+## Clean Code : follows a style that python community endorses 
+# Readibility : if you come back after 2 years are you still able to read that code?
+# Predictibility : use latest features
+# DRY
+
+## Excersize : Find the dupplicate
+some_list = ['a', 'b', 'c','b', 'd', 'm', 'n', 'n']
+dupplicates = []
+for value in some_list :
+    if some_list.count(value) > 1 :
+        if value not in dupplicates :
+            dupplicates.append(value)
+print(dupplicates)
+
 
     
    
