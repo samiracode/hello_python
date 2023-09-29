@@ -63,10 +63,42 @@ print(10 == 10.0) # True
 print([] == [])   # True
 print([1,2,3] == [1,2,3]) # True
 
-print(True is 1) # if we make all the == above to 'is', they all ended up false
+#print(True is 1)
+# if we make all the == above to 'is', they all ended up false
 # because == compares the values of but 'is' is pointing at a place in memory 
 # Where all these values are alocated, as they can not be the same, it prints False
 print ([] is []) # False
 # print(value is value) True
 # print( data_structure is data_structur) False
 
+## For Loops 
+for item in "samira is a ..." :
+    print(item)
+for item in [1,2,3,4,5] :
+    print(item)
+    print(item)
+    print(item)
+print(item)     # 5 gets printed 4 times!
+
+for item in (1,2,3,4,5) :
+    for x in {'a','b','c'} :
+      print(item, x)
+      
+## ITERABLE can be a list, dictionary, set, string, tuple
+
+user = {
+    'name': 'Samira',
+    'age': 5008,
+    'can_swim': True
+}
+for item in user :
+    print(item) # it prints out only the keys but what if we want the values as well?
+# dictionaries have 3 methods when it comes to iterate thru them;
+for item in user.items() :
+    print(item)
+for item in user.values() :
+    print(item)
+for item in user.keys() :
+    print(item)
+for key, value in user.items() :
+    print(key, value)
