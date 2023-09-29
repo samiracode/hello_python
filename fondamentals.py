@@ -102,3 +102,24 @@ for item in user.keys() :
     print(item)
 for key, value in user.items() :
     print(key, value)
+
+## Excersize 
+my_list = [1,2,3,4,5,6,7,8,9,10]
+sum = 0
+for num in my_list :
+    sum = sum + num
+print(sum)
+
+## RANGE FUNCTION : is a special object that rerurns an object that produces 
+# a sequence of integers from start to stop
+for number in range(0,11) :
+    print(number)
+
+for _ in range(0,11,2) :
+    print(_)
+
+for _ in range(10,0,-2) :
+    print(_)
+
+for _ in range(10,0,-2) :
+    print(list(range(10)))
