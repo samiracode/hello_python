@@ -115,3 +115,35 @@ user_3 = user.copy()
 user.pop('badges')
 user.update({'experience' : 6 })
 print(user)
+
+## Tuple is an immutable list
+my_tuple = (1,2,3,4,5)
+print(my_tuple[1])
+print(4 in my_tuple)
+new_tuple = my_tuple[1:2]
+print(new_tuple)
+x,y,z,*other = (1,2,3,4,5,6,7,8)
+print(y)
+print(other)
+print(my_tuple.count(5)) # counts how many of that value
+print(my_tuple.index(5)) # number of index of that value
+print(len(my_tuple))
+
+## Set : is an unordered collection on unique objects
+my_set = {1,2,3,4,5,6}
+my_set.add(100)
+print(my_set)
+example_list = [1,2,3,4,5,5,5]
+print(set(example_list)) 
+print(1 in my_set)  # set object does not support indexing
+your_set = {4,5,6,7,8,9,10}
+print(my_set.difference(your_set)) # it shows the diffrences
+my_set.discard(5)
+print(my_set)
+#my_set.difference_update(your_set)  # it removes the differences
+print(my_set)
+print(my_set.intersection(your_set))
+print(my_set.isdisjoint(your_set)) # Does these sets having nothing in common?
+print(my_set.union(your_set))
+print(my_set.issubset(your_set)) #zir majmueh
+print(my_set.issubset(your_set)) # mokamel 
