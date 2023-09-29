@@ -123,3 +123,12 @@ for _ in range(10,0,-2) :
 
 for _ in range(10,0,-2) :
     print(list(range(10)))
+
+## ENUMERATE wraps around an object and returns an object that is enumerated. we should give an iterable object
+# to enumerate over it.
+for i, char in enumerate('Haaallllååååå') :
+    print(i, char)
+
+for i, char in enumerate(list(range(100))) :
+   if char == 50 :
+       print(f'The index of 50 is : {i}')
