@@ -105,10 +105,24 @@ def highest_even (li) :
     else :
         print(max(evens))
 
+highest_even([1,3,5,7,8,4,6,12])
+
+## Walrus Operator (:= )
+a = 'Helllooooo'
+if len(a) > 5 :
+    print(f'this is {len(a)} long element. Too long!')
+
+if((n := len(a)) > 5) :
+    print(f'this is {n} charachter long. I am not gonna print this')
+
+while ((n:= len(a)) > 1) :
+    print(n)
+    a = a[:-1]
+print(a)
      
 
             
-highest_even([1,3,5,7,8,4,6,12])
+
             
 
            
