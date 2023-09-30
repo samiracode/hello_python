@@ -44,4 +44,18 @@ def sum (num1, num2) :
 total = sum(10,20)
 print(total)
 
+## tesla exersize :
+
+
+def turn_on_engin () :
+    age =input('How old are you?')
+    driver_age = int(age)
+    if driver_age <18 :
+        print('Sorry, you are not old enough! Powering off!')
+    else :
+        print('enjoy the ride')
+
+turn_on_engin()
+
+
 
