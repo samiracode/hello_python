@@ -35,4 +35,13 @@ say_hello(emoji=':)', name='Andrei')
 def say_hello1(name="Arthur", emoji='xD ') :
   print(f'Hello {name} {emoji}')
 
+## Return 
+# a function weather modifys something or returns something
+def sum (num1, num2) :
+    def another_fun (n1, n2) :
+        return n1 + n2
+    return another_fun(num1, num2)
+total = sum(10,20)
+print(total)
+
 
