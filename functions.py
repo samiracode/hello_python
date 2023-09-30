@@ -119,6 +119,61 @@ while ((n:= len(a)) > 1) :
     print(n)
     a = a[:-1]
 print(a)
+
+## Scope ; which variables do we have acces to 
+#1 start with local 
+#2 parent local
+#3 Global
+#4 built in python functions
+
+n = 1
+
+def parent () :
+    n = 10
+    def confusion ():
+        return n
+    return confusion ()
+
+print(parent())
+print(n)
+
+## Global Keyworld
+# local & nonlocal
+total2 = 0 
+def count():
+    global total2
+    total2 += 1
+    return total2
+
+count()
+count()
+print(count())
+# the above example is not a good way of practice 
+# a better way is called "dependency injection"
+# the previous block of code was giving an output of 3
+# we re-write the code above with dependency injection and get the same result:
+
+total3 = 0
+def count2(total3) :
+    total3 += 1
+    return total3
+
+print(count2(count2(count2(total3))))
+
+# the nonlocal keyword is refering to parent local
+def outer() :
+    x = "local"
+    def inner ():
+        nonlocal x
+        x = "non local"
+        print("inner:", x)
+    
+    inner()
+    print("outer:", x)
+
+outer()
+    
+    
      
 
             
