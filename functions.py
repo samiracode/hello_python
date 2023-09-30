@@ -57,5 +57,19 @@ def turn_on_engin () :
 
 turn_on_engin()
 
+## Docstring
+def test(a) :
+    '''
+    this function test & prints parameter a
+    '''
+    print(a)
+
+test('!!!!')
+
+help(test)
+# or magic method or dunder method
+print(test.__doc__)
+
+
 
 
