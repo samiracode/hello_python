@@ -129,8 +129,8 @@ class Wizard(User) :  # children classes = sub-classes = drived-classes
     
     def attack(self):
         print(f'atacking with the power of {self.power}.')
-        
 
+        
 class Archer(User) : # children classes = sub-classes = drived-classes
     def __init__(self, name, num_arrows):
       self.name = name
@@ -143,6 +143,9 @@ wizard1 = Wizard('Marlin', 50)
 archer1 = Archer('Robin', 100)
 wizard1.attack()
 archer1.attack()
+print(isinstance(wizard1, Wizard))
+print(isinstance(wizard1, User))
+print(isinstance(wizard1, object)) # everything in python is an object so everything is instance of the base object
     
         
 
