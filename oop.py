@@ -42,6 +42,56 @@ car2.race()
 car3.race()
 
 
+# Ex. The oldest cat
+
+class Cat:
+    species = 'mammal' # attribute for this class
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+# Instantiate the Cat object with 3 cats
+peanut = Cat("Peanut", 3)
+garfield = Cat("Garfield", 5)
+snickers = Cat("Snickers", 1)
+
+
+# Find the oldest cat
+def get_oldest_cat(*args):
+    return max(args)
+
+
+# Output
+print(f"The oldest cat is {get_oldest_cat(peanut.age, garfield.age, snickers.age)} years old.")
+
+## @classmethod & @staticmethod
+
+class PlayerId :
+    membership = True #attribute
+    def __init__(self, username, score) :
+        self.username = username
+        self.score = score
+    
+    @classmethod  # We do not need to instantiate objects!
+    def adding_things(cls, badge1, badge2) :
+        return cls('Tedy', badge1 + badge2 ) # with cls at this line we are instantiating an object
+    
+    @staticmethod # Exact like @classmethod we just do not care any more about class state in this method
+    def adding_things( badge1, badge2) :
+        return  badge1 + badge2 
+
+player10 = PlayerId.adding_things(2,3)
+print(player10.score)
+
+        
+
+
+
+
+
+
+
         
 
 
