@@ -147,7 +147,17 @@ print(isinstance(wizard1, Wizard))
 print(isinstance(wizard1, User))
 print(isinstance(wizard1, object)) # everything in python is an object so everything is instance of the base object
     
-        
+# POLYMORPHYSM allows us to have many forms
+
+def player_attack(char):
+    char.attack()
+
+player_attack(wizard1)  
+player_attack(archer1)  
+
+for char in [wizard1, archer1]:
+    char.attack()
+
 
 
 
