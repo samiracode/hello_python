@@ -123,7 +123,9 @@ class User :  # parent class
         print('logged in!') # that we want to assign to user, then we would not need any __init__ method
 
 class Wizard(User) :  # children classes = sub-classes = drived-classes
-    def __init__(self, name, power):
+    
+    def __init__(self, name, power,email):
+        super().__init__(email)
         self.name = name
         self.power = power
     
