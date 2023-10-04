@@ -41,3 +41,5 @@ my_pets = Pets(my_cats)
 
 #4 Output all of the cats walking using the my_pets instance
 my_pets.walk()
+
+

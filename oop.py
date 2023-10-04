@@ -141,8 +141,8 @@ class Archer(User) : # children classes = sub-classes = drived-classes
     def attack(self):
         print(f'atacking with the arrows. Number of arrows left : {self.num_arrows}')
 
-wizard1 = Wizard('Marlin', 50)
-archer1 = Archer('Robin', 100)
+wizard1 = Wizard('Marlin', 50, 'merlin@gmail.com')
+archer1 = Archer('Robin', 100, 'robin@gmail.com')
 wizard1.attack()
 archer1.attack()
 print(isinstance(wizard1, Wizard))
@@ -159,6 +159,10 @@ player_attack(archer1)
 
 for char in [wizard1, archer1]:
     char.attack()
+
+## Introspecetion: the ability to determine the type of an object in the runtime
+print(dir(wizard1))
+
 
 
 
