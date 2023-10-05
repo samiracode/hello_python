@@ -64,8 +64,10 @@ print(front_times('Chocolate', 2)) #→ 'ChoCho'
 
 
 def string_splosion(str):
-   for i in str:   
-    return print(i)
+    result = ''
+    for i in range(len(str)):
+        result += str[:i+1]
+    return result
    
 
 print(string_splosion('Code')) #→ 'CCoCodCode'
